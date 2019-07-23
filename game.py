@@ -35,9 +35,10 @@ while (ok==0) :
 			guessnumber = int(inputs)
 			if guessnumber is not None :
 				if isinstance(guessnumber,int):
-			
-					ok=IsRight(guessnumber,number,time)
 					time = time +1
+					ok=IsRight(guessnumber,number,time)
+					if ok==1:
+						print('suceed in ' + str(time)+ ' time(s)')
 				else :
 					print("please input a number")
 		except :
