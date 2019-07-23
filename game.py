@@ -1,10 +1,10 @@
 #coding:utf-8
 import random
-number = random.randint(0, 10000)
+number = random.randint(0, 1000)
 '''print(number)'''
 def IsRight(guessnumber,number,time):
 	if guessnumber>10000 :
-		print(' should smaller than 10000')
+		print(' should smaller than 1000')
 		return 0
 	elif guessnumber<0 :
 		print('should bigger than  than 0')
@@ -23,7 +23,7 @@ def IsRight(guessnumber,number,time):
 			
 		
 ok = 0
-message= 'input a number between 0 and 100000\n'
+message= 'input a number between 0 and 1000\n'
 time=0
 while (ok==0) :
 	if time>14:
