@@ -1,9 +1,9 @@
 #coding:utf-8
 import random
 number = random.randint(0, 1000)
-'''print(number)'''
+"""print(number)"""
 def IsRight(guessnumber,number,time):
-	if guessnumber>10000 :
+	if guessnumber>1000 :
 		print(' should smaller than 1000')
 		return 0
 	elif guessnumber<0 :
@@ -20,8 +20,17 @@ def IsRight(guessnumber,number,time):
 			
 			print('you win!')
 			return 1
-			
-		
+def PlayAgain():
+	yesorno=input("Do you want to play again? (y/n)")			
+	if yesorno=="y" :
+		ok=0
+		time=0
+		number = random.randint(0, 1000)
+		return 0
+	elif yesorno=="n" :
+		return 1
+	else :
+		return 2
 ok = 0
 message= 'input a number between 0 and 1000\n'
 time=0
@@ -39,6 +48,13 @@ while (ok==0) :
 					ok=IsRight(guessnumber,number,time)
 					if ok==1:
 						print('suceed in ' + str(time)+ ' time(s)')
+						again=2
+						while again==2 :
+							again=PlayAgain()
+						if again==0:
+							ok=0
+						elif again==1:
+							ok=1
 				else :
 					print("please input a number")
 		except :
