@@ -2,7 +2,7 @@
 import random
 number = random.randint(0, 1000)
 """print(number)"""
-def IsRight(guessnumber,number,time):
+def IsRight(guessnumber,number):
 	if guessnumber>1000 :
 		print(' should smaller than 1000')
 		return 0
@@ -45,16 +45,13 @@ while (ok==0) :
 			if guessnumber is not None :
 				if isinstance(guessnumber,int):
 					time = time +1
-					ok=IsRight(guessnumber,number,time)
+					ok=IsRight(guessnumber,number)
 					if ok==1:
 						print('suceed in ' + str(time)+ ' time(s)')
 						again=2
 						while again==2 :
 							again=PlayAgain()
-						if again==0:
-							ok=0
-						elif again==1:
-							ok=1
+						ok=again
 				else :
 					print("please input a number")
 		except :
