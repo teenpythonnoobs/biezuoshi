@@ -1,4 +1,6 @@
 with open('./test.txt') as file_object:
-	for line in file_object :
-		print(line.rstrip())
+	thing=''.join(line.rstrip('\n') for line in file_object.readlines())
+
+print(thing)
+
 		
