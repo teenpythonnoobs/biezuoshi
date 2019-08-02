@@ -1,4 +1,5 @@
-import  game
-al_game = game.mygame()
-print(al_game.guessthing)
-print(al_game.userinputok  )
+import game
+
+al_game = game.MyGame()
+print(al_game.guess_thing)
+print(al_game.user_input_ok)

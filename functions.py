@@ -1,14 +1,14 @@
 import random
 
 
-def randthing(shit):
-    shit.guessthing = random.choice(['scissors', 'stone', 'paper'])
+def randThing(shit):
+    shit.guess_thing = random.choice(['scissors', 'stone', 'paper'])
 
 
-def getthing(shit):
-    shit.userinput = input('please input something')
-    if shit.userinput == 'scissors' or shit.userinput == 'stone' or shit.userinput == 'paper':
-        shit.userinputok = shit.userinput
-        shit.ok = 0
+def GetThing(shit):
+    shit.user_input = input('please input something\n')
+    if shit.user_input == 'scissors' or shit.user_input == 'stone' or shit.user_input == 'paper':
+        shit.user_input_ok = shit.user_input
+        shit.ok = True
     else:
-        shit.ok = 1
+        shit.ok = False
