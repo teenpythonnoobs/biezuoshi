@@ -24,7 +24,7 @@ while(ok==0):
 			print("try again")
 		elif a >inputs:
 			if inputs==4:
-			  print("you lose")
+				print("you lose")
 			elif inputs==3 and a==5:	
 				print('you win')
 			elif inputs==3 and a==4:
@@ -41,7 +41,7 @@ while(ok==0):
 		while again==2 :
 				yesorno=input("Do you want to play again? (y/n)")			
 				if yesorno=="y" :
-					ok=0
+					again=0
 							
 				elif yesorno=="n" :
 					again=1
@@ -49,8 +49,4 @@ while(ok==0):
 					again=2
 		ok=again  				  
 
-	 													  
-		  	
-				
-		  
-	
+
