@@ -8,9 +8,9 @@ while al_game.again:
         print('平手')
         al_game.again = False
     else:
-        if al_game.guess_thing == 'scissors' and al_game.user_input_ok_ting == 'stone':
+        if al_game.guess_thing == 'scissors' and al_game.user_input_ok_thing == 'stone':
             al_game.whenWin()
-        elif al_game.guess_thing == 'paper' and al_game.user_input_ok_ting == 'scissors':
+        elif al_game.guess_thing == 'paper' and al_game.user_input_ok_thing == 'scissors':
             al_game.whenWin()
         elif al_game.guess_thing == 'stone' and al_game.user_input_ok_thing == 'paper':
             al_game.whenWin()
